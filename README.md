@@ -1,2 +1,5 @@
 # Niffler
-niffler is a task management platform
+
+Niffler is a task management platform
+
+It's built with ❤️ from Zimon, using Rust, Typescript & Parcel.
