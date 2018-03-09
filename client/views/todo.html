@@ -2,6 +2,34 @@
     <head>
         <meta charset="UTF-8">
         <title>Todo Demo page</title>
+        <style>
+            body {
+                font-family: verdana,arial,helvetica,sans-serif;
+                letter-spacing: 1px;
+                line-height: 1.4em;
+            }
+            #main {
+                width: 50%;
+                height: 400px;
+            }
+            #main *:before,
+            #main *:after {
+                color: #aaa;
+                content: attr(data-decorator);
+            }
+            #main *[data-placeholder]:empty:before {
+                content: attr(data-placeholder);
+                cursor: text; /* chrome placeholder fix */
+                color: white;
+            }
+            #main #editor-demo:empty:before {
+                color: #ccc;
+            }
+            #editor-demo {
+                border: 1px solid #ddd;
+                padding: 12px;
+            }
+        </style>
     </head>
     <body>
         <div id="main"></div>
